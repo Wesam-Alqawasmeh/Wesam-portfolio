@@ -22,7 +22,6 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
 import profile from "assets/img/theme/wesam.jpg";
 
 class Profile extends React.Component {
@@ -35,8 +34,15 @@ class Profile extends React.Component {
     return (
       <>
         <DemoNavbar />
-        <main className="profile-page" ref="main">
-          <section className="section-profile-cover section-shaped my-0">
+        <main
+          className="profile-page"
+          ref="main"
+          style={{ backgroundColor: "#172b4d" }}
+        >
+          <section
+            className="section-profile-cover section-shaped my-0"
+            style={{ backgroundColor: "#FAA613" }}
+          >
             {/* Circles background */}
             <div className="shape shape-style-1 shape-default alpha-4">
               <span />
@@ -76,6 +82,7 @@ class Profile extends React.Component {
                             alt="..."
                             className="rounded-circle"
                             src={profile}
+                            style={{ border: "3px solid white" }}
                           />
                         </a>
                       </div>
@@ -145,9 +152,10 @@ class Profile extends React.Component {
                       <Col lg="9">
                         <p>
                           A Full Stack Web Developer with a Civil Engineering
-                          backgroung. Excellent command of English, Strong-self motivated and hard worker,
-                          able to manage the problems with a high problem
-                          solving skills. Curruntly studing wed development at LTUC-ASAC.
+                          backgroung. Excellent command of English, Strong-self
+                          motivated and hard worker, able to manage the problems
+                          with a high problem solving skills. Curruntly studing
+                          wed development at LTUC-ASAC.
                         </p>
                         <a href="#pablo" onClick={(e) => e.preventDefault()}>
                           Show more
@@ -160,7 +168,6 @@ class Profile extends React.Component {
             </Container>
           </section>
         </main>
-        <SimpleFooter />
       </>
     );
   }
