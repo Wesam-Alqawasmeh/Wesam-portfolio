@@ -82,7 +82,7 @@ class Profile extends React.Component {
                             alt="..."
                             className="rounded-circle"
                             src={profile}
-                            style={{ border: "3px solid white" }}
+                            style={{ border: "3px solid white", objectFit:"cover" }}
                           />
                         </a>
                       </div>

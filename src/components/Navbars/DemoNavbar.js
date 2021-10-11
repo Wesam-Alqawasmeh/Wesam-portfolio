@@ -83,6 +83,7 @@ class DemoNavbar extends React.Component {
                     height: "50px",
                     borderRadius: "50px",
                     border: "3px solid white",
+                    objectFit: "cover"
                   }}
                 />
                 <p
